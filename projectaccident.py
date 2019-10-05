@@ -17,3 +17,17 @@ def timeandspeed():
 		print("Light on")
 	return p
 
+
+#the function for checking overspeeding
+def timeandspeed():
+	speed=random.randint()
+	max_speed=120	
+	if speed>max_speed:
+		p=1	
+	else:
+		continue
+	if p==1:
+		print("Light on")
+	return
+
+
