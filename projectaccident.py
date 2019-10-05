@@ -34,3 +34,5 @@ Ixp=Ixx+cos(angle)*cos(angle)+Iyy*sin(angle)*sin(angle)-2*Ixy*sin(angle)*cos(ang
 Iyp=Ixx+cos(angle)*cos(angle)+Ixx*sin(angle)*sin(angle)-2*Ixy*sin(angle)*cos(angle)
 RotationMatrix=[[cos(angle),sin(angle)], [-sin(angle),cos(angle)]]
 
+
+
