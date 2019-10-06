@@ -40,6 +40,11 @@ def accident():
 	else:
 		return 0
 
+def acceleration():
+	accl = int(input())
+	return accl 
+
+
 
 
 
