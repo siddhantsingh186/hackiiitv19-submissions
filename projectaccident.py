@@ -59,6 +59,22 @@ while True:
 		print(s)
 		counter_axel_rotation=0
 		#pass on information to cloud based server
+	acc=acceleration()
+	if (accl_present-accl_previous) >= 15:
+                print("Beep on")
+		#pass on information to cloud based server 	    
+	speed_check=timeandspeed()        
+	if speed_check:
+           	counter_speed+=1
+	if counter_speed >= 5:
+                counter = 0
+              #pass on information to cloud based server
+	accl_previous = accl_present;
+	acci=accident()
+	if acci == 1:
+		print("Light ON")
+		#pass on information to cloud based server
+	time.sleep(0.5)         
 
 
 
