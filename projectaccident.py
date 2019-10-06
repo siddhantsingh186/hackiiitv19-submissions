@@ -29,4 +29,19 @@ def position():
 		c=1
 	return c
 
+#the function for calculation of acceleration at time of crash
+def accident():
+	accl=input()
+	fix_accl=80.0
+	if accl<0:
+		accl=-accl
+	if accl>fix_accl:
+		return 1
+	else:
+		return 0
+
+
+
+
+
 
