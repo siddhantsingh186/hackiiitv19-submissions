@@ -44,6 +44,21 @@ def acceleration():
 	accl = int(input())
 	return accl 
 
+#snippet to check the violation of rules and accordingly upload the data to the cloud based server
+accl_previous = acceleration()
+counter_speed = 1;
+counter_axel_rotation = 1
+while True: 
+	accl_present = acceleration()
+	pos = position()
+	if pos == 1:
+		counter_axel_rotation+=1
+		print("Beep On")
+	if counter_axel_rotation>=5:
+		s="beep on"*2
+		print(s)
+		counter_axel_rotation=0
+		#pass on information to cloud based server
 
 
 
